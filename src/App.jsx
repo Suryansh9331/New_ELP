@@ -63,6 +63,7 @@ import Header from "./Components/header"
 import ContactSection from "./Components/ReachUS";
 import FinancePopupForm from "./Components/PopupForm";
 import Popup from "./Components/PopUbBox";
+import ScrollToTop from "./Components/ScrollToTop"
 const App = () => {
   const [isPopupOpen, setIsPopupOpen] = useState(false);
 
@@ -72,6 +73,7 @@ const App = () => {
   return (
     <Router>
       <div>
+        <ScrollToTop/>
         <Header onTriggerPopup={openPopup} />
         <Routes>
           <Route path="/" element={<Home />} />
