@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { X, CreditCard, CheckCircle } from 'lucide-react';
 
-export default function Popup() {
+export default function Popup({ onTriggerPopup }) {
   const [isVisible, setIsVisible] = useState(false);
   const [isClosing, setIsClosing] = useState(false);
 
@@ -119,7 +119,7 @@ export default function Popup() {
 
             {/* CTA Button */}
             <button
-                onClick={handleCallNow}
+                onClick={onTriggerPopup}
               className="w-2/3 bg-purple-600 ml-12 hover:text-purple-600  text-white font-semibold py-3 px-4 rounded-full transition-colors duration-200 animate-bounce cursor-pointer hover:bg-transparent hover:border-purple-600  hover:border-2"
             >
               Apply Now 
