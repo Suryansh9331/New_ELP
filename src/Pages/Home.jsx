@@ -28,7 +28,7 @@ function App() {
       <WhyChooseUs onTriggerPopup={openPopup} />
       <FAQ onTriggerPopup={openPopup} />
       <TestimonialSection onTriggerPopup={openPopup} />
-      <ContactSection onTriggerPopup={openPopup} />
+      
       <FinancePopupForm isOpen={isPopupOpen} onClose={closePopup} />
      
     </div>
